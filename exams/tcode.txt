@@ -1,0 +1,92 @@
+al11     查看服务器文件
+cg3y     下载服务器文件
+sp02     后台程序
+ks03     成本中心
+
+se91     消息类 程序  https://blog.csdn.net/XLevon/article/details/125177895
+
+SE16n/se11    修改标准表和自建表
+
+se11      搜索帮助开发
+
+smartfrom 和 scriptfrom    https://blog.csdn.net/hubaichun/article/details/73718369
+
+SAP上传图片LOGO(SE78/SMW0)
+
+
+
+   SELECT MATNR
+
+	FROM EINA
+
+      INTO TABLE LDT_EINA
+
+      WHERE MATNR = MARA-MATNR.
+
+    IF SY-SUBRC = 0.
+
+      DELETE LDT_EINA WHERE LDT_EINA-LOEKZ = 'X'.
+
+
+       n = lines( LDT_EINA ).
+
+      IF n = 1.
+
+         ......
+      
+      ELSE.
+         ......
+
+      ENDIF.
+      
+      
+    ELSE.
+
+    MESSAGE E007(YGCA) WITH TEXT-S21 SPACE.      
+   
+    ENDIF.
+
+
+
+   判断内表数据条数：
+
+    1.  LOOP AT LDT_EINA.
+
+          n = n + 1.
+  
+        ENDLOOP.
+     
+    2.  n = lines( LDT_EINA )
+
+
+
+
+
+
+
+
+DELETE GDT_ALV_DETAIL WHERE KUNNR <> GDS_ALV_SUM-KUNNR
+
+
+SET CURSOR FIELD 'P_RYEAR'.        设置鼠标焦点到‘P_RYEAR’
+
+
+权限校验
+
+* Company Code Is Initial
+  IF S_BUKRS-LOW IS INITIAL.
+    SET CURSOR FIELD 'S_BUKRS-LOW'.
+    MESSAGE E034(YGCO).
+* Fill in all required entry fields
+  ENDIF.
+
+
+MESSAGE ID 'YGCA' TYPE 'S' NUMBER '007'         消息
+
+CLEAR LDS_FILE    清空内表
+
+
+
+
+
+
